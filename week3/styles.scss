@@ -1,0 +1,26 @@
+// we will use variables
+//colors
+$body-background-color: darkred;
+$form-background-color: white;
+$input-color: blue;
+$headlines-color : purple;
+$break-small: 900px;
+
+body {
+    background-color: $body-background-color;
+}
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    @media (min-width: $break-small) {
+       & {
+          width: 70%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
+    }
+}
